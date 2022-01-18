@@ -6,11 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="fid code.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="dir1.json" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="dir1.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="fid code.cs" />
   </ItemGroup>
 
   <ItemGroup>

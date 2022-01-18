@@ -10,15 +10,30 @@ namespace DirectoryExer
     {
         internal static void DeleteDirectory(string inPath)
         {
-            foreach (string file in GetFiles(inPath))
-            {
-                DeleteFile(file);
-            }
-            foreach (string dir in GetDirectories(inPath))
-            {
-                DeleteDirectory(dir);
-            }
-            DeleteEmptyDir(inPath);
+            // use the following functions (defined in base class) to delete the folder
+            //string[] GetFiles(string inPath)
+            //string[] GetDirectories(string inPath)
+            //void DeleteFile(string inPath)
+            //void DeleteEmptyDir(string inPath)
+
+   
+
         }
+
+        internal static void DoNotLookAtMe()
+        {
+            //foreach (string file in GetFiles(inPath))
+            //{
+            //    DeleteFile(file);
+            //}
+            //foreach (string dir in GetDirectories(inPath))
+            //{
+            //    DeleteDirectory(dir);
+            //}
+            //DeleteEmptyDir(inPath);
+
+        }
+
+
     }
 }
