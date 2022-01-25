@@ -191,7 +191,7 @@ namespace DirectoryExer
 
         internal void Delete()
         {
-            if (Files.Count != 0 && Dirs.Count != 0)
+            if (Files.Count != 0 || Dirs.Count != 0)
             {
                 throw new InvalidOperationException("Cannot delete not empty directory");
             }
